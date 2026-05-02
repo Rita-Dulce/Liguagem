@@ -5,11 +5,7 @@ estudantes = [
     {"nome": "Carla", "idade": 22, "curso": "Eng. Civil"},
     {"nome": "Daniel", "idade": 20, "curso": "Eng. Informática"}
 ]
-
-# Solicita a idade ao utilizador
 idade_filtro = int(input("Digite a idade mínima: "))
-
-# Filtra e transforma os nomes usando list comprehension
 nomes_maiores = [
     estudante["nome"].upper() 
     for estudante in estudantes 
